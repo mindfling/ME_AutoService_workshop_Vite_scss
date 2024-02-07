@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Auto Service project Vite + TS + scss</title>
   <link rel="stylesheet" href="node_modules/normalize.css">
+
+  <link rel="stylesheet" href="./styles/global.css">
 </head>
 
 <body class="page">
@@ -54,7 +56,7 @@
             fill="#D10014" />
         </svg>
       </a>
-      <a class="header__button btn btn__white" title="Перейти к выбору мастера">
+      <a href="#contact" class="header__link header__link_white" title="Перейти к выбору мастера">
         Выбрать специалиста
       </a>
     </div>
@@ -96,11 +98,10 @@
     <section class="contact">
       <div class="container contact__container">
         <h2 class="contact__title">
-          Заполните форму и мы <span class="contact__title contact__title_red">свяжемся с вами</span>
+          Заполните форму и мы <span class="contact__title_red">свяжемся с вами</span>
         </h2>
 
-        <form action="#" method="get" class="contact__form form">
-
+        <form class="contact__form form">
           <fieldset class="form__fieldset form__fieldset_type">
             <legend class="form__title">Выберите нужное направление</legend>
 
@@ -153,25 +154,40 @@
 
             <div class="form__days">
               <label class="form__item radio">1
-                <input type="radio" name="day" class="radio__input">
+                <input class="radio__input" type="radio" name="day">
               </label>
               <label class="form__item radio">2
-                <input type="radio" name="day" class="radio__input">
+                <input class="radio__input" type="radio" name="day">
               </label>
               <label class="form__item radio">3
-                <input type="radio" name="day" class="radio__input">
+                <input class="radio__input" type="radio" name="day">
               </label>
               <label class="form__item radio">4
-                <input type="radio" name="day" class="radio__input">
+                <input class="radio__input" type="radio" name="day">
               </label>
               <label class="form__item radio">5
-                <input type="radio" name="day" class="radio__input">
+                <input class="radio__input" type="radio" name="day">
               </label>
               <label class="form__item radio">6
-                <input type="radio" name="day" class="radio__input">
+                <input class="radio__input" type="radio" name="day">
               </label>
               <label class="form__item radio">7
-                <input type="radio" name="day" class="radio__input">
+                <input class="radio__input" type="radio" name="day">
+              </label>
+              <label class="form__item radio">8
+                <input class="radio__input" type="radio" name="day">
+              </label>
+              <label class="form__item radio">9
+                <input class="radio__input" type="radio" name="day">
+              </label>
+              <label class="form__item radio">10
+                <input class="radio__input" type="radio" name="day">
+              </label>
+              <label class="form__item radio">11
+                <input class="radio__input" type="radio" name="day">
+              </label>
+              <label class="form__item radio">12
+                <input class="radio__input" type="radio" name="day">
               </label>
             </div>
 
@@ -179,25 +195,25 @@
               <p class="form__text">Доступное время:</p>
 
               <label class="form__item radio">
-                <input type="radio" name="time" class="radio-input">
+                <input class="radio-input" type="radio" name="time">
                 <span class="form__day">10:00</span>
               </label>
               <label class="form__item">
-                <input type="radio" name="time" class="radio-input">
+                <input class="radio-input" type="radio" name="time">
                 <span class="form__day">11:00</span>
               </label>
               <label class="form__item">
-                <input type="radio" name="time" class="radio-input">
+                <input class="radio-input" type="radio" name="time">
                 <span class="form__day">12:00</span>
               </label>
               <label class="form__item">
-                <input type="radio" name="time" class="radio-input">
+                <input class="radio-input" type="radio" name="time">
                 <span class="form__day">14:00</span>
               </label>
             </div>
           </fieldset>
 
-          <fieldset class="form__fieldset form__fieldset_info info">
+          <fieldset class="form__fieldset form__fieldset_info">
             <legend class="form__title">Заполните поля</legend>
 
             <input type="text" name="name" placeholder="Имя клиента" class="form__input" required>
@@ -206,9 +222,10 @@
             <input type="text" name="year" placeholder="Год выпуска" class="form__input">
 
             <div class="form__info">
-              <p class="form__text info__type">Диагностика и ремонт двигателей</p>
+              <p class="form__text form__info-type">Диагностика и ремонт двигателей</p>
               <p class="form__info-time">
-                <time class="form__info-date-time" datatime="2024-02-03 14:00">03.02&nbsp;14:00</time>
+                <time class="form__info-date" datatime="2024-02-03">03.02</time>&nbsp;
+                <time class="form__info-time" datatime="14:00">14:00</time>
               </p>
             </div>
 
