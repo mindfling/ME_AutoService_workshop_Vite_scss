@@ -197,7 +197,25 @@
             </div>
           </fieldset>
 
+          <fieldset class="form__fieldset form__fieldset_info info">
+            <legend class="form__title">Заполните поля</legend>
 
+            <input type="text" name="name" placeholder="Имя клиента" class="form__input" required>
+            <input type="text" name="phone" placeholder="Телефон клиента" class="form__input" required>
+            <input type="text" name="model" placeholder="Модель машины" class="form__input">
+            <input type="text" name="year" placeholder="Год выпуска" class="form__input">
+
+            <div class="form__info">
+              <p class="form__text info__type">Диагностика и ремонт двигателей</p>
+              <p class="form__info-time">
+                <time class="form__info-date-time" datatime="2024-02-03 14:00">03.02&nbsp;14:00</time>
+              </p>
+            </div>
+
+            <button type="button" class="form__btn-prev">Назад</button>
+            <button type="button" class="form__btn-next">Далее</button>
+            <button type="submit" class="form__btn-submit">Отправить</button>
+          </fieldset>
         </form>
       </div>
     </section>
