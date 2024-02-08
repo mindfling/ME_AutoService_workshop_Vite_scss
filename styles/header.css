@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 49px;
+}
+
+.header__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+}
+
+
+.header__link,
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 50px;
+  opacity: 1;
+}
+
+.header__link:hover {
+  opacity: .9;
+}
+
+.header__link_white,
+.btn_white {
+  background-color: var(--greyform);
+  color: var(--black);
+}

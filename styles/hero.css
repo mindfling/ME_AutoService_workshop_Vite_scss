@@ -1,0 +1,74 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.hero__container {
+  width: 100%;
+  min-height: 616px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 1px solid lawngreen; */
+  background: var(--black) url(../img/Wheel-2@8x.png) center/contain no-repeat;
+}
+
+.hero__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  color: var(--white);
+  font-family: Raleway, Arial;
+  font-size: 160px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 150%;
+  /* 240px */
+}
+
+.hero__title-up {
+  align-self: flex-start;
+}
+
+.hero__title-down {
+  align-self: flex-end;
+}
+
+.hero__about {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.hero__intro {}
+
+.hero__year {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+}
+
+.hero__tagline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  color: #D10014;
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+}
