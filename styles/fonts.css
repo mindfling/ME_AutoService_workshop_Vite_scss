@@ -1,3 +1,10 @@
+/* import google fonts */
+/*
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap')
+*/
+
+
+/* import local fonts */
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
@@ -33,4 +40,3 @@
   src: local('Raleway'),
        url('/public/fonts/Raleway-Black.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
-
