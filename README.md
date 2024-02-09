@@ -24,3 +24,10 @@ npm i sass -D
 ```
 
 use `npm run dev` or simple `npm start`
+
+
+## Branches
+
+main - by Maks
+
+dev - dev by Dim
