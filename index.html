@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="./styles/contact .css">
 
   <link rel="stylesheet" href="./styles/footer.css">
-  
+
 </head>
 
 <body class="page">
@@ -124,32 +124,50 @@
           <fieldset class="form__fieldset form__fieldset_type">
             <legend class="form__title">Выберите нужное направление</legend>
 
-            <input class="radio__input" type="radio" name="body_repair" id="body_repair">
-            <label class="form__item radio" for="body_repair">Кузовной ремонт</label>
+            <div class="radio">
+              <input class="radio__input" type="radio" name="type" id="bodyRepair" value="bodyRepair">
+              <label class="radio__lable" for="bodyRepair">Кузовной ремонт</label>
+            </div>
 
-            <input class="radio__input" type="radio" name="diagnostics" id="diagnostics">
-            <label class="form__item radio" for="diagnostics">Диагностика и&nbsp;ремонт двигателей</label>
+            <div class="radio">
+              <input class="radio__input" type="radio" name="type" id="engineDiagnosisRepair" value="engineDiagnosisRepair">
+              <label class="radio__lable" for="engineDiagnosisRepair">Диагностика и&nbsp;ремонт двигателей</label>
+            </div>
 
-            <input class="radio__input" type="radio" name="electrics" id="electrics">
-            <label class="form__item radio" for="electrics">Электрика и&nbsp;электроника</label>
+            <div class="radio">
+              <input class="radio__input" type="radio" name="type" id="electricalDiagnosis" value="electricalDiagnosis">
+              <label class="radio__lable" for="electricalDiagnosis">Электрика и&nbsp;электроника</label>
+            </div>
 
-            <input class="radio__input" type="radio" name="brakes" id="brakes">
-            <label class="form__item radio" for="brakes">Тормозные системы и&nbsp;ходовая часть</label>
+            <div class="radio">
+              <input class="radio__input" type="radio" name="type" id="brakeSystems" value="brakeSystems">
+              <label class="radio__lable" for="brakeSystems">Тормозные системы и&nbsp;ходовая часть</label>
+            </div>
 
-            <input class="radio__input" type="radio" name="welding" id="welding">
-            <label class="form__item radio" for="welding">Сварочные работы</label>
+            <div class="radio">
+              <input class="radio__input" type="radio" name="type" id="weldingWorks" value="weldingWorks">
+              <label class="radio__lable" for="weldingWorks">Сварочные работы</label>
+            </div>
 
-            <input class="radio__input" type="radio" name="conditioner_repair" id="conditioner_repair">
-            <label class="form__item radio" for="conditioner_repair">Ремонт и&nbsp;обслуживание системы кондиционирования</label>
+            <div class="radio">
+              <input class="radio__input" type="radio" name="type" id="acRepair" value="acRepair">
+              <label class="radio__lable" for="acRepair">Ремонт и&nbsp;обслуживание системы кондиционирования</label>
+            </div>
 
-            <input class="radio__input" type="radio" name="tires" id="tires">
-            <label class="form__item radio" for="tires">Шиномонтаж и&nbsp;балансировка</label>
+            <div class="radio">
+              <input class="radio__input" type="radio" name="type" id="tireFitting" value="tireFitting">
+              <label class="radio__lable" for="tireFitting">Шиномонтаж и&nbsp;балансировка</label>
+            </div>
 
-            <input class="radio__input" type="radio" name="service" id="service">
-            <label class="form__item radio" for="service">Замена масел и&nbsp;техническое обслуживание</label>
+            <div class="radio">
+              <input class="radio__input" type="radio" name="type" id="oilChange" value="oilChange">
+              <label class="radio__lable" for="oilChange">Замена масел и&nbsp;техническое обслуживание</label>
+            </div>
 
-            <input class="radio__input" type="radio" name="transmissions" id="transmissions">
-            <label class="form__item radio" for="transmissions">Ремонт трансмиссии и&nbsp;коробки передач</label>
+            <div class="radio">
+              <input class="radio__input" type="radio" name="type" id="transmissionRepair" value="transmissionRepair">
+              <label class="radio__lable" for="transmissionRepair">Ремонт трансмиссии и&nbsp;коробки передач</label>
+            </div>
           </fieldset>
 
 
@@ -163,65 +181,55 @@
             </div>
 
             <div class="form__days">
-              <label class="form__item radio">1
-                <input class="radio__input" type="radio" name="day">
-              </label>
-              <label class="form__item radio">2
-                <input class="radio__input" type="radio" name="day">
-              </label>
-              <label class="form__item radio">3
-                <input class="radio__input" type="radio" name="day">
-              </label>
-              <label class="form__item radio">4
-                <input class="radio__input" type="radio" name="day">
-              </label>
-              <label class="form__item radio">5
-                <input class="radio__input" type="radio" name="day">
-              </label>
-              <label class="form__item radio">6
-                <input class="radio__input" type="radio" name="day">
-              </label>
-              <label class="form__item radio">7
-                <input class="radio__input" type="radio" name="day">
-              </label>
-              <label class="form__item radio">8
-                <input class="radio__input" type="radio" name="day">
-              </label>
-              <label class="form__item radio">9
-                <input class="radio__input" type="radio" name="day">
-              </label>
-              <label class="form__item radio">10
-                <input class="radio__input" type="radio" name="day">
-              </label>
-              <label class="form__item radio">11
-                <input class="radio__input" type="radio" name="day">
-              </label>
-              <label class="form__item radio">12
-                <input class="radio__input" type="radio" name="day">
-              </label>
-            </div>
+              <div class="radio">
+                <input class="radio__input" type="radio" name="day" id="day1" value="1">
+                <label class="radio__label" for="day1">1</label>
+              </div>
 
+              <div class="radio">
+                <input class="radio__input" type="radio" name="day" id="day2" value="2">
+                <label class="radio__label" for="day2">2</label>
+              </div>
+
+              <div class="radio">
+                <input class="radio__input" type="radio" name="day" id="day3" value="3">
+                <label class="radio__label" for="day3">3</label>
+              </div>
+
+              <div class="radio">
+                <input class="radio__input" type="radio" name="day" id="day4" value="4">
+                <label class="radio__label" for="day4">4</label>
+              </div>
+
+              <div class="radio">
+                <input class="radio__input" type="radio" name="day" id="day5" value="5">
+                <label class="radio__label" for="day5">5</label>
+              </div>
+            </div>
+            
             <div class="form__times">
               <p class="form__text">Доступное время:</p>
+              
+              <div class="radio">
+                <input class="radio__input" type="radio" name="time" id="time10" value="10:00">
+                <label class="radio__label" for="time10">10:00</label>
+              </div>
+              <div class="radio">
+                <input class="radio__input" type="radio" name="time" id="time11" value="11:00">
+                <label class="radio__label" for="time11">11:00</label>
+              </div>
+              <div class="radio">
+                <input class="radio__input" type="radio" name="time" id="time12" value="12:00">
+                <label class="radio__label" for="time12">12:00</label>
+              </div>
+              <div class="radio">
+                <input class="radio__input" type="radio" name="time" id="time13" value="13:00">
+                <label class="radio__label" for="time13">13:00</label>
+              </div>
 
-              <label class="form__item radio">
-                <input class="radio-input" type="radio" name="time">
-                <span class="form__day">10:00</span>
-              </label>
-              <label class="form__item">
-                <input class="radio-input" type="radio" name="time">
-                <span class="form__day">11:00</span>
-              </label>
-              <label class="form__item">
-                <input class="radio-input" type="radio" name="time">
-                <span class="form__day">12:00</span>
-              </label>
-              <label class="form__item">
-                <input class="radio-input" type="radio" name="time">
-                <span class="form__day">14:00</span>
-              </label>
             </div>
           </fieldset>
+
 
           <fieldset class="form__fieldset form__fieldset_info">
             <legend class="form__title">Заполните поля</legend>
