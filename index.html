@@ -2,14 +2,14 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Auto Service project Vite + TS + scss</title>
-  <!-- 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- preconnect oline google fonts
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
   -->
 
   <link rel="preload" href="/fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -20,15 +20,11 @@
   <link rel="stylesheet" href="node_modules/normalize.css">
   <link rel="stylesheet" href="./styles/fonts.css">
   <link rel="stylesheet" href="./styles/global.css">
-
   <link rel="stylesheet" href="./styles/header.css">
   <link rel="stylesheet" href="./styles/hero.css">
-
   <link rel="stylesheet" href="./styles/about.css">
-  <link rel="stylesheet" href="./styles/contact .css">
-
+  <link rel="stylesheet" href="./styles/contact.css">
   <link rel="stylesheet" href="./styles/footer.css">
-
 </head>
 
 <body class="page">
@@ -93,7 +89,7 @@
           <span class="hero__title-down">Ремонт</span>
         </h2>
         <div class="hero__about">
-          <p class="hero__year"><time data-time="2018">с&nbsp;2018 года</time></p>
+          <p class="hero__year"><time data-time="2018-01-01">с&nbsp;2018 года</time></p>
           <p class="hero__tagline">
             <span>Быстро.</span>
             <span>Качественно.</span>
@@ -130,7 +126,8 @@
             </div>
 
             <div class="radio">
-              <input class="radio__input" type="radio" name="type" id="engineDiagnosisRepair" value="engineDiagnosisRepair">
+              <input class="radio__input" type="radio" name="type" id="engineDiagnosisRepair"
+                value="engineDiagnosisRepair">
               <label class="radio__lable" for="engineDiagnosisRepair">Диагностика и&nbsp;ремонт двигателей</label>
             </div>
 
@@ -206,10 +203,10 @@
                 <label class="radio__label" for="day5">5</label>
               </div>
             </div>
-            
+
             <div class="form__times">
               <p class="form__text">Доступное время:</p>
-              
+
               <div class="radio">
                 <input class="radio__input" type="radio" name="time" id="time10" value="10:00">
                 <label class="radio__label" for="time10">10:00</label>
@@ -239,20 +236,20 @@
             <input type="text" name="model" placeholder="Модель машины" class="form__input">
             <input type="text" name="year" placeholder="Год выпуска" class="form__input">
 
-            <div class="form__info">
-              <p class="form__text form__info-type">Диагностика и&nbsp;ремонт двигателей</p>
-              <p class="form__info-time">
-                <time class="form__info-date" datatime="2024-02-03">03.02</time>
-                <time class="form__info-time" datatime="14:00">14:00</time>
-              </p>
-            </div>
-
-            <div class="form__btn-wrapper">
-              <button type="button" class="form__btn-prev">Назад</button>
-              <button type="button" class="form__btn-next">Далее</button>
-              <button type="submit" class="form__btn-submit">Отправить</button>
-            </div>
+            <p class="form__info">Диагностика и&nbsp;ремонт двигателей</p>
+            <p class="form__info">
+              <time class="form__info-date" datatime="2024-02-03T14:00">
+                <span>03.02</span>
+                <span>14:00</span>
+              </time>
+            </p>
           </fieldset>
+
+          <div class="form__btn-wrapper">
+            <button type="button" class="form__btn-prev">Назад</button>
+            <button type="button" class="form__btn-next">Далее</button>
+            <button type="submit" class="form__btn-submit">Отправить</button>
+          </div>
         </form>
       </div>
     </section>
